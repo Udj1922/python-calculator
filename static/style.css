@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator{
+    width: 350px;
+    background-color: rgb(215, 222, 226);
+    padding: 20px;
+    border-radius: 5%;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+
+}
+
+.display{
+    height: 140px;
+    background-color: whitesmoke;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+    font-size: 28px;
+    text-align: right;
+    border: 1px solid #e3e3e3;
+    border-radius: 5%;
+    color: black;
+
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row1, .row2, .row3, .row4, .row5{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+button{
+    flex: 1;
+    height: 65px;
+    border: 1px solid rgb(103, 101, 101);
+    border-radius: 20%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.operator{
+    background-color: rgb(135, 142, 142);
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+.number{
+    background-color: #ccc;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+.equals{
+    background-color: rgb(38, 38, 38);
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.equals:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    opacity: 1;
+
+}
+
+.delete{
+    background-color: rgb(191, 199, 199);
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+.clear{
+    background-color: rgb(233, 237, 237);
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+#expression{
+    font-size: 32px;
+    color: #222;
+    min-height: 40px;
+
+}
+
+#display{
+    font-size: 28px;
+    color: #888;
+    min-height: 35px;
+
+}
+
+.history{
+    background-color: rgb(191, 199, 199);
+    color: #30364b;
+    font-weight: bold;
+
+}
+
+#expression{
+    width: 100%;
+    border-right: 2px solid #f28c45;
+    min-height: 40px;
+    padding-right: 5px;
+}
+
+#history-list{
+    width: 100%;
+    max-height: 100px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #888;
+    list-style: none;
+    text-align: right;
+}
+
+#history-list li{
+    font-size: 18px;
+    color: #888;
+    overflow-wrap: anywhere;
+    padding: 3px 0;
+    text-align: right;
+}
+
+#expression, #display, #history-list{
+    width: 100%;
+    flex-shrink: 0;
+}
+
