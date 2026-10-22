@@ -1,37 +1,33 @@
-# Python Calculator
+Python Calculator
 
-A web-based calculator built using Python, Flask, HTML, CSS, and JavaScript.
+A calculator web application built using Python, Flask, HTML, CSS, and JavaScript.
 
-## Features
+Features
 
-- Addition, subtraction, multiplication, and division
-- Floor division and exponentiation supported by the Python calculation module
+- Basic arithmetic operations
 - Interactive calculator interface
-- Separate expression and result displays
-- AC and DEL buttons
-- Operator replacement
-- Error handling
-- History of the five most recent calculations
+- Calculation history showing the five most recent calculations
+- Clear and delete buttons
+- Responsive display
 
-## Technologies Used
+Technologies Used
 
-- Python 3
+- Python
 - Flask
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
-- Fetch API
 
-## Project Structure
+Run Locally
 
-```text
-01-calculator/
-├── app.py
-├── calculator.py
-├── templates/
-│   └── index.html
-├── static/
-│   ├── style.css
-│   └── script.js
-├── README.md
-└── .gitignore
+1. Install Python.
+
+2. Install Flask:
+   
+   pip install flask
+
+3. Run the application:
+   
+   python app.py
+
+4. Open "http://127.0.0.1:5000" in your browser.
